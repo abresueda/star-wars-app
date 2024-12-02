@@ -1,0 +1,64 @@
+body {
+  display: flex;
+  margin: 44px;
+  background: url('./assets/starwars-background.png') no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+
+.title {
+  margin-top: 200px;
+}
+
+/* Yıldız Gemileri Listesi */
+.starship-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 kart yan yana */
+  gap: 100px;
+  padding: 20px;
+  list-style: none;
+  margin: 0;
+}
+
+/* Kart Yapısı */
+.starship-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  color: black;
+  padding: 20px;
+}
+
+/* Kart Hover Efekti */
+.starship-card:hover {
+  transform: scale(1.05);
+}
+
+/* Kart İçeriği */
+.starship-card-content {
+  padding: 15px;
+}
+
+/* Başlık */
+.starship-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Bilgi (Model ve Speed) */
+.starship-info {
+  font-size: 24px;
+  color: #555;
+}
+
+/* Linkin Stilini Kaldır */
+.starship-link {
+  text-decoration: none;
+  color: inherit;
+}
